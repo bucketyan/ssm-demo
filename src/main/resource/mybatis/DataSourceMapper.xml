@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DataSourceMapper">
+  <select id="query" resultType="map" parameterType="string">
+        <![CDATA[
+    		SELECT
+                DS_NAME,
+                DS_SHORT_NAME,
+                DS_URL,
+                DS_DRIVER_CLASS,
+                DS_USRNAME,
+                DS_PASSWORD
+            FROM SYSTEM_DATASOURCE
+        ]]>
+         
+    </select>
+</mapper>
